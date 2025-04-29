@@ -8,6 +8,9 @@ version: '1.0.0'
 # This setting configures which "profile" dbt uses for this project.
 profile: 'dbt_repo'
 
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_repo'
+
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
@@ -16,8 +19,12 @@ macro-paths: ["macros"]
 # Configuring models
 models:
   dbt_repo:
-    # Config indicated by + and applies to all files under models/example/
+    # Config indicated by + and Config indicated by + and applies to all files under models/example/
+   
     SILVER_AIRBNB:
-      schema:
-       SILVER_AIRBNB
+      schema: SILVER_AIRBNB
       +materialized: table
+    TESTING:
+      schema: testing_sch
+      +materialized: table
+      +transient: false
