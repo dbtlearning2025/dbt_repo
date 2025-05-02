@@ -25,6 +25,9 @@ models:
     SILVER_AIRBNB:
       schema: SILVER_AIRBNB
       +materialized: table
+    GOLD_AIRBNB:
+      schema: GOLD_AIRBNB
+      +materialized: table
     TESTING:
       schema: testing_sch
       +materialized: table
