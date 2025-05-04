@@ -1,0 +1,13 @@
+sources:
+  - name: src_bronze_airbnb
+    schema: bronze_airbnb
+
+    tables:
+      - name: my_hosts # user define name
+        identifier: SRC_HOSTS # database table name
+        
+      - name: my_listings
+        identifier: src_listings
+        
+      - name: my_reviews
+        identifier: src_reviews

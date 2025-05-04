@@ -2,7 +2,8 @@ WITH src_listings AS
 ( SELECT
 *
 FROM
-DEV.BRONZE_AIRBNB.src_listings
+--DEV.BRONZE_AIRBNB.src_listings
+ {{ source('src_bronze_airbnb', 'my_listings') }}
 )
 SELECT
 id AS listing_id, name AS listing_name, listing_url, room_type, minimum_nights, host_id,

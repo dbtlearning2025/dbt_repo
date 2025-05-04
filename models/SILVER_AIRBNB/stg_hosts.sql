@@ -2,7 +2,8 @@ WITH src_hosts AS (
     SELECT
 *
 FROM
-       DEV.BRONZE_AIRBNB.SRC_HOSTS
+       --DEV.BRONZE_AIRBNB.SRC_HOSTS
+    {{ source('src_bronze_airbnb', 'my_hosts') }}
 )
 SELECT
 id AS host_id,
