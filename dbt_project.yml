@@ -13,7 +13,10 @@ profile: 'dbt_repo'
 # found in the "models/" directory. You probably won't need to change these!
 model-paths: ["models"]
 macro-paths: ["macros"]
-
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+snapshot-paths: ["snapshots"]
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
